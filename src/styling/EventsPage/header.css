@@ -1,0 +1,258 @@
+html{
+    font-family: proxima nova, sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(to right, rgb(255, 101, 31), rgba(209, 22, 0, 0.81));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.height{
+    height: 100%;
+}
+
+.navWrapper{
+    width: 90%;
+    line-height: 60px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.logo{
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.desktopNav{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.desktopNav a{
+    text-decoration: none;
+    padding-left: 40px;
+    height: 100%;
+}
+
+.desktopNav div{
+    text-decoration: none;
+    height: 100%;
+}
+
+.nav-create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-create a{
+    height: 32px;
+    width: 180px;
+    font-weight: 500;
+    display: flex;
+    line-height: 32px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    border-color: none;
+    color: black;
+    padding-left: 0;
+}
+
+.createEvent img{
+    height: 25px;
+    width: 25px;
+    padding-left: 8px; 
+}
+
+.nav-profile{
+    color: white;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.nav-profile img{
+    height: 50px;
+    width: 50px;
+    padding-left: 8px;
+}
+
+.mobileNav{
+    display: none;
+}
+
+.headerBackground{
+    height: 550px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.headerBackground img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header{
+    height: 550px;
+    width: 100%;
+}
+
+.headerWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContent{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+}
+
+.eyeCatcherWrapper{
+    margin-top: 0;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.eyeCatcher{
+    height: 300px;
+    width: 810px;
+    position: absolute;
+}
+
+.eyeCatcher img{
+    position: absolute;
+}
+
+.eyeCatcher a{
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+}
+
+.searchBlockWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.searchBlock{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 70px;
+    border-radius: 40px;
+    text-decoration: none;
+    height: 480px;
+    width: 400px;
+    position: relative;
+    bottom: -50px;
+    box-shadow: 8px 8px 24px 5px rgba(0,0,0,0.08);
+}
+
+.searchBlock h3{
+    color: #FF7700;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.searchBlock input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 32px;
+    border: 10px black;
+    border: 1px solid rgba(0,0,0,0.30);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.timeSpan{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 32px;
+}
+
+.timeSpan input{
+    height: 50px;
+    width: 45%;
+    margin-bottom: 0;
+    border: 1px solid rgba(0,0,0,0.30);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.timeHyphen{
+    background-color: rgba(0,0,0,0.33);
+    width: 18px;
+    height: 3px;
+    border-radius: 1px;
+}
+
+.btn{
+    margin-top: 15px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn a{
+    background-color: #FF7700;
+    border-radius: 20px;
+    height: 100%;
+    width: 330px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+
+.btn a img{
+    margin-left: 14px; 
+}
