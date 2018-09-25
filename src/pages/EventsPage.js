@@ -4,7 +4,7 @@ import '../styling/EventsPage/cards.css';
 import '../styling/main.css';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import Events from '../components/Events';
+import Events from '../components/EventsOverview';
 
 class LandingPage extends Component {
     render() {

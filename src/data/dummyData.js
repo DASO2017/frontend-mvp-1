@@ -1,0 +1,43 @@
+const dummyData = [
+    {
+        "title": "Test-Event 1",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aliquam placeat et, voluptate dolores cumque optio ipsa esse iste molestiae sit quidem, aperiam iure illo, odit eos amet magnam? Mollitia eveniet in cumque officia officiis temporibus laudantium, aspernatur labore, aliquam, modi adipisci doloremque maiores ut assumenda beatae! Cumque, voluptates hic!",
+        "image": "http://eventmanagementdelhi.in/blog/wp-content/uploads/2018/01/events.jpg",
+        "dateStart": "01.10.2018",
+        "dateEnd": "02.10.2018",
+        "location": "Kreuzberg, Berlin",
+        "participants": "< 100",
+        "creator": "5tce6he7cue2",
+        "creator_name": "Jenni",
+        "creator_pic": "https://randomuser.me/api/portraits/women/56.jpg",
+        "points": "20",
+    },
+    {
+        "title": "Test-Event 2",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aliquam placeat et, voluptate dolores cumque optio ipsa esse iste molestiae sit quidem, aperiam iure illo, odit eos amet magnam? Mollitia eveniet in cumque officia officiis temporibus laudantium, aspernatur labore, aliquam, modi adipisci doloremque maiores ut assumenda beatae! Cumque, voluptates hic!",
+        "image": "https://www.geventm.com/wp-content/uploads/2015/11/networking-events-uae.jpg",
+        "dateStart": "15.10.2018",
+        "dateEnd": "15.10.2018",
+        "location": "Treptow, Berlin",
+        "participants": "20-40",
+        "creator": "6f7fug97g7d4",
+        "creator_name": "Thomas",
+        "creator_pic": "https://randomuser.me/api/portraits/men/23.jpg",
+        "points": "4",
+    },
+    {
+        "title": "Test-Event 3",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aliquam placeat et, voluptate dolores cumque optio ipsa esse iste molestiae sit quidem, aperiam iure illo, odit eos amet magnam? Mollitia eveniet in cumque officia officiis temporibus laudantium, aspernatur labore, aliquam, modi adipisci doloremque maiores ut assumenda beatae! Cumque, voluptates hic!",
+        "image": "https://www.saalbach.com/fotos-event/winter/mountain-attack/2018/image-thumb__1625657__box-img/Attack_2018_Start_01.jpeg",
+        "dateStart": "14.12.2018",
+        "dateEnd": "16.12.2018",
+        "location": "irgendwo",
+        "participants": "1000",
+        "creator": "73g7qiu3q9f5",
+        "creator_name": "Ecardo",
+        "creator_pic": "https://randomuser.me/api/portraits/men/37.jpg",
+        "points": "-12",
+    },
+]
+
+export default dummyData;

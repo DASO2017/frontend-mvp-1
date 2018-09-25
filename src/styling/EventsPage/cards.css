@@ -6,6 +6,12 @@
     background-color: white;
 }
 
+.eventsTitle{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 .eventsTitle h1{
     font-size: 90px;
     line-height: 90px;
@@ -35,6 +41,11 @@
     align-items: center;
     text-decoration: none;
     margin-right: 16px;
+}
+
+.filters a img{
+    width: 16px;
+    height: 16px;
 }
 
 .filters a h3{
