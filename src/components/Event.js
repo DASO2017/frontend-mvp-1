@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import upvoteButton from '../images/icons/up.svg';
-import downvoteButton from '../images/icons/down.svg';
+import upvoteButton from '../images/up.png';
+import downvoteButton from '../images/down.png';
 import locationIcon from '../images/location_white.png';
 import clockIcon from '../images/clock.png';
 import participantsIcon from '../images/people.png';
@@ -12,6 +12,8 @@ class Event extends Component {
     }
 
     render() {
+        const points = Number(this.props.data.points);
+
         return (
             <div className="event">
                 <div className="eventWrapper">
@@ -36,7 +38,7 @@ class Event extends Component {
                                     <div className="voting">
                                         <img src={upvoteButton} alt="vote up"/>
                                         <div className="voteCounterWrapper">
-                                            <h3>{this.props.data.points}</h3>
+                                            <h3 className={points>=0 ? "positiveCounter" : "negativeCounter"}>{points>0 ? `+${points}` : points}</h3>
                                         </div>
                                         <img src={downvoteButton} alt="vote down"/>
                                     </div>

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 45px 90px 90px 90px ;
     background-color: white;
+    box-sizing: border-box;
 }
 
 .eventsTitle{
@@ -54,10 +55,16 @@
     margin-left: 12px;
 }
 
+.eventsWrapper{
+    display: flex;
+    justify-content: center;
+}
+
 .events{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: fit-content;
+    grid-gap: 100px;
 }
 
 .event{
@@ -133,12 +140,23 @@
     color: black;
 }
 
+.eventCreator a img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
 .votingWrapper{
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.voting img{
+    height: 33px;
+    width: 55px;
 }
 
 .voteCounterWrapper{
@@ -151,9 +169,16 @@
 
 .voteCounterWrapper h3{
     font-size: 25px;
-    color: rgba(46, 159, 43, 0.95);
     text-decoration: none;
     margin-bottom: 5px;
+}
+
+.positiveCounter{
+    color: rgba(46, 159, 43, 0.95);    
+}
+
+.negativeCounter{
+    color: rgba(159, 43, 43, 0.95);
 }
 
 .eventFooter{

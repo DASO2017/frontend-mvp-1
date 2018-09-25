@@ -17,12 +17,14 @@ class Events extends Component {
 
     render() {
         return (
-            <div className="events">
-                {Object.keys(this.state.data)
-                    .map(key => 
-                        <Event key={key} index={key} data={this.state.data[key]} />
-                    )
-                }
+            <div className="eventsWrapper">
+                <div className="events">
+                    {Object.keys(this.state.data)
+                        .map(key => 
+                            <Event key={key} index={key} data={this.state.data[key]} />
+                        )
+                    }
+                </div>
             </div>
         );
     }
