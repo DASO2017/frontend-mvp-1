@@ -4,13 +4,15 @@ import '../styling/EventsPage/cards.css';
 import '../styling/main.css';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
+import Events from '../components/Events';
 
 class LandingPage extends Component {
     render() {
         return (
             <div>
                 <Navbar />
-                <Header />  
+                <Header />
+                <Events />
             </div> 
         );
     }
