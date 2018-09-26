@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import dummyData from '../data/dummyData';
-import Event from '../components/Event';
+import Event from './Event';
 
 class Events extends Component {
     constructor(props){
