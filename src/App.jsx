@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
 import './App.css';
-import EventsPage from './pages/EventsPage';
+import EventsPage from './components/pages/EventsPage';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      isAuthenticated: false,
+    }
+  }
+
   render() {
     return (
-      <div className="App">
-        <EventsPage />
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" exact component={EventsPage} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

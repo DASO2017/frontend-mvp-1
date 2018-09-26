@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import background from '../images/background-header.jpg';
-import SearchForm from './SearchForm';
-import Eyecatcher from './Eyecatcher';
+import background from '../../images/background-header.jpg';
+import SearchForm from '../forms/SearchForm';
+import Eyecatcher from '../Eyecatcher';
 
 class Header extends Component {
     constructor(props){

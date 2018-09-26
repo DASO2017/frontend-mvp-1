@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import FilterButton from './FilterButton';
-import Events from './Events';
+import FilterButton from '../FilterButton';
+import Events from '../Events';
 
 class EventsOverview extends Component {
     constructor(props){
