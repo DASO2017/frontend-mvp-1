@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import dummyData from '../data/dummyData';
 import Event from './Event';
+import fire from "../config/Fire";
 
 class Events extends Component {
     constructor(props){
@@ -12,7 +13,41 @@ class Events extends Component {
     }
 
     componentWillMount() {
-        this.setState({...this.state, data: dummyData});
+        let eventsList = [];
+        fire.database().ref().child("events").once("value", (snap) => {
+             snap.forEach((data) => {
+                console.log(data);
+                let name = data.val().name;
+                let text = data.val().text;
+                let location = data.val().location;
+                let pic = data.val().pic;
+                let startt = data.val().startt;
+                let endt = data.val().endt;
+          
+                let points = data.val().points;
+                let key = data.key;
+
+                let placholderImage = "http://eventmanagementdelhi.in/blog/wp-content/uploads/2018/01/events.jpg";
+
+                let event = {
+                                "key": key,
+                                "title": name, 
+                                "description": text,
+                                "image": pic ? pic : placholderImage,
+                                "dateStart": startt,
+                                "dateEnd": endt,
+                                "location": location,
+                                "participants": "?",
+                                "creator": "6f7fug97g7d4",
+                                "creator_name": "Thomas",
+                                "creator_pic": "https://randomuser.me/api/portraits/men/23.jpg",
+                                "points": points 
+                            }
+
+                eventsList.push(event);         
+              });
+              this.setState({...this.state, data: eventsList}); 
+          });
     }
 
     render() {

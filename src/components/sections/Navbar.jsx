@@ -4,6 +4,14 @@ import UserNav from '../UserNav';
 import profilePicture from '../../images/profile.png';
 
 class Navbar extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            isAuthenticated: this.props.isAuthenticated,
+        }
+    }
+
     render() {
         return (
             <section className="navBar">

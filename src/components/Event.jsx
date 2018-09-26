@@ -9,10 +9,21 @@ class Event extends Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            points: Number(this.props.data.points)
+        }
+    }
+
+    upvote = () => {
+        this.setState({...this.state, points: (this.state.points+1)});
+    }
+
+    downvote = () => {
+        this.setState({...this.state, points: (this.state.points-1)});
     }
 
     render() {
-        const points = Number(this.props.data.points);
+        const points = Number(this.state.points);
 
         return (
             <div className="event">
@@ -36,11 +47,11 @@ class Event extends Component {
                                 </div>
                                 <div className="votingWrapper">
                                     <div className="voting">
-                                        <img src={upvoteButton} alt="vote up"/>
+                                        <img onClick={this.upvote} src={upvoteButton} alt="vote up"/>
                                         <div className="voteCounterWrapper">
                                             <h3 className={points>=0 ? "positiveCounter" : "negativeCounter"}>{points>0 ? `+${points}` : points}</h3>
                                         </div>
-                                        <img src={downvoteButton} alt="vote down"/>
+                                        <img onClick={this.downvote} src={downvoteButton} alt="vote down"/>
                                     </div>
                                 </div>
                             </div>

@@ -13,18 +13,33 @@ class UserNav extends Component {
     render() {
         return (
             <div className="height">
-                <div className="desktopNav">
-                    <div className="nav-create">
-                        <a href="#" className="createEvent">
-                            Create Event
-                            <img src={plus_icon} alt="plus icon"/>
+                {this.state.isAuthenticated ? (
+                    <div className="desktopNav">
+                        <div className="nav-button">
+                            <a href="/create" className="createEvent">
+                                Create Event
+                                <img src={plus_icon} alt="plus icon"/>
+                            </a>
+                        </div>
+                        <a href="#" className="nav-profile">
+                            {this.props.username}
+                            <img src={this.props.profilePicture} alt="profile picture"/>
                         </a>
                     </div>
-                    <a href="#" className="nav-profile">
-                        {this.props.username}
-                        <img src={this.props.profilePicture} alt="profile picture"/>
-                    </a>
-                </div>
+                ):(
+                    <div className="desktopNav">
+                        <div className="nav-button">
+                            <a href="/login">
+                                Login
+                            </a>
+                        </div>
+                        <div className="nav-button">
+                            <a href="/signup">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                )}
                 <div className="mobileNav">
                     <a href="#">&#9776;</a>
                 </div>

@@ -6,7 +6,7 @@ const GuestRoute = ({isAuthenticated: isAuthenticated, component: Component, ...
         {...rest}
         render={
             props =>
-                !isAuthenticated ? <Component {...props} /> : <Component {...props} />
+                !isAuthenticated ? <Component isAuthenticated={isAuthenticated} {...props} /> : <Component isAuthenticated={isAuthenticated} {...props} />
         }
     />
 );
