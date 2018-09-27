@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-import './App.css';
 import fire from "./config/Fire";
 import EventsPage from './components/pages/EventsPage';
 import Login from './components/pages/Login';
@@ -11,9 +11,6 @@ import CreateAnEvent from './components/pages/CreateAnEvent';
 import GuestRoute from './components/routes/GuestRoute';
 import UserRoute from './components/routes/UserRoute';
 
-
-const Test = () => <h1>Test</h1>
-
 class App extends Component {
   constructor() {
     super();
@@ -21,7 +18,6 @@ class App extends Component {
       user: null,
       isAuthenticated: true,
     };
-    this.authListener = this.authListener.bind(this);
   }
 
   componentDidMount() {
@@ -45,7 +41,6 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" exact component={EventsPage} />
-          <UserRoute path="/test" exact component={Test} />
           <UserRoute path="/create" exact component={CreateAnEvent} />
           <GuestRoute path="/login" exact component={Login} />
           <GuestRoute path="/signup" exact component={SignUp} />

@@ -23,6 +23,7 @@ class Events extends Component {
                 let pic = data.val().pic;
                 let startt = data.val().startt;
                 let endt = data.val().endt;
+                var participants = data.val().participantes;
           
                 let points = data.val().points;
                 let key = data.key;
@@ -37,7 +38,7 @@ class Events extends Component {
                                 "dateStart": startt,
                                 "dateEnd": endt,
                                 "location": location,
-                                "participants": "?",
+                                "participants": participants,
                                 "creator": "6f7fug97g7d4",
                                 "creator_name": "Thomas",
                                 "creator_pic": "https://randomuser.me/api/portraits/men/23.jpg",

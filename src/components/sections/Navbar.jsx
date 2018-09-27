@@ -18,7 +18,7 @@ class Navbar extends Component {
                 <nav>
                     <div className="navWrapper">
                         <Logo />
-                        <UserNav isAuthenticated={true} username={"Jenni"} profilePicture={profilePicture}/>
+                        <UserNav isAuthenticated={false} username={"Jenni"} profilePicture={profilePicture}/>
                     </div>
                 </nav>
             </section>

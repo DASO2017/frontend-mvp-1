@@ -11,7 +11,7 @@ class EventsOverview extends Component {
         return (
             <section className="content">
                 <div className="eventsTitle">
-                    <h1>Events</h1>
+                    <h2>Events</h2>
                     <div className="titleUnderscore"></div>
                     <div className="filters">
                         <FilterButton category="Votes"/>

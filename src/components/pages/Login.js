@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-//import "../../styling/Functions/functions.css";
+import Bootstrap from "bootstrap/dist/css/bootstrap.css";
+import $ from "jquery";
+import "../../styling/Functions/functions.css";
 import fire from "../../config/Fire";
 
 class Login extends Component {
