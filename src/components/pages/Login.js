@@ -38,11 +38,10 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Login</h1>
+      <div id="login-allcontent">
+        <h1 className="form-header">Eventhype</h1>
         <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email</label>
+          <div class="function-form-group">
             <input
               value={this.state.email}
               onChange={this.handleChange}
@@ -55,8 +54,7 @@ class Login extends Component {
               required
             />
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+          <div class="function-form-group">
             <input
               value={this.state.password}
               onChange={this.handleChange}

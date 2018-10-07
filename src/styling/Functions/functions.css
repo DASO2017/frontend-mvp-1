@@ -1,39 +1,35 @@
-.App {
-    text-align: center;
+#signup-allcontent {
+  text-align: center;
+  margin-top: 10%;
 }
 
-.form-group {
-    text-align: left !important;
-    margin: auto !important;
-  }
-  
-  h1 {
-    color: white !important;
-    font-weight: bold !important;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    background-color: #ff7700 !important;
-  }
-  
-  label {
-    font-weight: bold;
-    color: #ff7700;
-    font-size: 20px;
-    margin-top: 10px !important;
-  }
-  
-  .form-group {
-    width: 20%;
-  }
-  
-  .btn-warning {
-    font-size: 20px !important;
-    background-color: #ff7700 !important;
-    color: #fff !important;
-    margin: 20px !important;
-    border: none !important;
-  }
-  
-  .modal-header {
-    text-align: center !important;
-  }
+#login-allcontent {
+  text-align: center;
+  margin-top: 20%;
+}
+
+#create-allcontent {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.form-header {
+  color: #ff7700;
+  margin-bottom: 20px;
+}
+
+.function-form-group {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.btn-warning {
+  font-size: 20px;
+  background-color: #ff7700;
+  color: #fff;
+  margin: 20px;
+  border: none;
+  width: 20%;
+}

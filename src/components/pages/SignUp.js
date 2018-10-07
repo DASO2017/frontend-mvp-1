@@ -46,11 +46,10 @@ class SignUp extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Sign Up</h1>
+      <div id="signup-allcontent">
+        <h1 className="form-header">Eventhype</h1>
         <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email</label>
+          <div class="function-form-group">
             <input
               value={this.state.email}
               onChange={this.handleChange}
@@ -62,12 +61,8 @@ class SignUp extends Component {
               placeholder="Enter email"
               required
             />
-            <small id="emailHelp" class="form-text text-muted">
-              We'll never share your email with anyone else.
-            </small>
           </div>
-          <div class="form-group">
-            <label for="InputFirstName">First Name</label>
+          <div class="function-form-group">
             <input
               value={this.state.firstName}
               onChange={this.handleChange}
@@ -79,8 +74,7 @@ class SignUp extends Component {
               required
             />
           </div>
-          <div class="form-group">
-            <label for="InputSurname">Surname</label>
+          <div class="function-form-group">
             <input
               value={this.state.surname}
               onChange={this.handleChange}
@@ -92,8 +86,7 @@ class SignUp extends Component {
               required
             />
           </div>
-          <div class="form-group">
-            <label for="InputDateOfBirth">Date of Birth</label>
+          <div class="function-form-group">
             <input
               value={this.state.dateOfBirth}
               onChange={this.handleChange}
@@ -105,8 +98,7 @@ class SignUp extends Component {
               required
             />
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+          <div class="function-form-group">
             <input
               value={this.state.password}
               onChange={this.handleChange}

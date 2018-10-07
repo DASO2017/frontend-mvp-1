@@ -35,11 +35,11 @@ class CreateAnEvent extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Create an Event</h1>
+      <div id="create-allcontent">
+        <h1 className="form-header">Eventhype</h1>
         <form>
-          <div class="form-group">
-            <label for="InputEventTitle">Title</label>
+          <div class="function-form-group">
+            <label for="Title">Title</label>
             <input
               value={this.state.eventTitle}
               onChange={this.handleChange}
@@ -51,7 +51,7 @@ class CreateAnEvent extends Component {
               required
             />
           </div>
-          <div class="form-group">
+          <div class="function-form-group">
             <label for="InputEventDescription">Description</label>
             <textarea
               value={this.state.eventDescription}
@@ -64,16 +64,16 @@ class CreateAnEvent extends Component {
               required
             />
           </div>
-          <div class="form-group">
+          <div class="function-form-group">
             <label for="InputEventImage">Image</label>
             <input
               value={this.state.eventImage}
               onChange={this.handleChange}
-              type="file"
-              accept="image/*"
+              type="text"
               name="eventImage"
               class="form-control"
               id="InputEventImage"
+              placeholder="Enter image URL"
             />
           </div>
           <button
